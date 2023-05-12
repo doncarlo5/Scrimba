@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container >div {
+    width: 200px;
+    text-align: center;
+
+
+}
+
+h3 {
+    font-family: 'Verdana';
+    font-style: normal;
+    color: #EEEEEE;;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+button {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    color: #9AABD8;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9aabd821;
+}
+
+button:active {
+    background-color: #9aabd833;
+}
+
+
+.screen {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #F94F6D;
+    background-color: #080001;
+    padding: 0px 20px;
+    border-radius: 5px;
+    margin-bottom: 26px;
+
+}
+
+.group-button {
+    display: flex;
+    justify-content: space-between;
+
+}
