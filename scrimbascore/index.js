@@ -13,3 +13,10 @@ function guestbutton(score) {
   guestscore += score;
   document.getElementById("guestscorescreen").textContent = guestscore;
 }
+
+function newgame() {
+  homescore = 0;
+  guestscore = 0;
+  document.getElementById("homescorescreen").textContent = homescore;
+  document.getElementById("guestscorescreen").textContent = guestscore;
+}
