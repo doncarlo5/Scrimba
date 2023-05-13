@@ -25,7 +25,9 @@
       </div>
       <div>
         <h3>GUEST</h3>
-        <div id="guestscorescreen" class="screen"></div>
+        <div class="screen">
+          <div id="guestscorescreen"></div>
+        </div>
         <div class="group-button">
           <button onclick="guestbutton(1)">+1</button>
           <button onclick="guestbutton(2)">+2</button>
@@ -34,7 +36,7 @@
       </div>
     </div>
     <div class="newgame">
-    <button onclick="newgame()">New Game</button>
+    <button id="newgamebutton" onclick="newgame()">New Game</button>
    </div>
     <script src="/scrimbascore/index.js"></script>
   </body>

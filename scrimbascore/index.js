@@ -1,22 +1,44 @@
 let homescore = 0;
-document.getElementById("homescorescreen").textContent = homescore;
+let homescoreDisplay = document.getElementById("homescorescreen");
+homescoreDisplay.textContent = homescore;
 
 let guestscore = 0;
-document.getElementById("guestscorescreen").textContent = guestscore;
+let guestscoreDisplay = document.getElementById("guestscorescreen");
+guestscoreDisplay.textContent = guestscore;
 
 function homefunction(score) {
   homescore += score;
-  document.getElementById("homescorescreen").textContent = homescore;
+  homescoreDisplay.textContent = homescore;
+  highlightScore();
 }
 
 function guestbutton(score) {
   guestscore += score;
-  document.getElementById("guestscorescreen").textContent = guestscore;
+  guestscoreDisplay.textContent = guestscore;
+  highlightScore();
 }
 
 function newgame() {
   homescore = 0;
   guestscore = 0;
-  document.getElementById("homescorescreen").textContent = homescore;
-  document.getElementById("guestscorescreen").textContent = guestscore;
+  homescoreDisplay.textContent = homescore;
+  guestscoreDisplay.textContent = guestscore;
+  removeHighlight();
+}
+
+function highlightScore() {
+  if (homescore > guestscore) {
+    homescoreDisplay.classList.add("highlight");
+    guestscoreDisplay.classList.remove("highlight");
+  } else if (guestscore > homescore) {
+    guestscoreDisplay.classList.add("highlight");
+    homescoreDisplay.classList.remove("highlight");
+  } else {
+    removeHighlight();
+  }
+}
+
+function removeHighlight() {
+  homescoreDisplay.classList.remove("highlight");
+  guestscoreDisplay.classList.remove("highlight");
 }

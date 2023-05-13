@@ -1,0 +1,162 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#bff-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 300px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/Scotch.jpg");
+    position: relative;
+    animation: tremble 0.4s ease-in-out infinite;
+}
+
+ @keyframes tremble {
+        0% {
+          transform: translate(0px, 0px) rotate(0deg);
+        }
+        20% {
+          transform: translate(-5px, -5px) rotate(-2deg);
+        }
+        40% {
+          transform: translate(5px, -5px) rotate(2deg);
+        }
+        60% {
+          transform: translate(5px, 5px) rotate(-2deg);
+        }
+        80% {
+          transform: translate(-5px, 5px) rotate(2deg);
+        }
+        100% {
+          transform: translate(0px, 0px) rotate(0deg);
+        }
+      }
+
+#gift-img-hot:hover {
+    background-image: url("images/catparty.gif");
+    background-size: cover;
+}
+
+#gift-img-hot {
+    height: 280px;
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/joueur.gif");
+    background-size: cover;
+}
+
+#gift-img-genius {
+    height: 280px;
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/fete.jpg");
+}
+
+#gift-img-cocktail:hover {
+    background-image: url("images/cocktail.jpg");
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/lion.gif");
+  position: relative;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/

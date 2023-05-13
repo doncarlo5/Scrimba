@@ -8,7 +8,7 @@ body {
     justify-content: space-around;
 }
 
-.container >div {
+.container>div {
     width: 200px;
     text-align: center;
 
@@ -18,7 +18,8 @@ body {
 h3 {
     font-family: 'Verdana';
     font-style: normal;
-    color: #EEEEEE;;
+    color: #EEEEEE;
+    ;
     font-weight: 700;
     font-size: 40px;
     line-height: 36px;
@@ -66,4 +67,52 @@ button:active {
     display: flex;
     justify-content: space-between;
 
+}
+
+#newgamebutton {
+    background-color: #1B2631;
+    border: 2px solid #F0E68C;
+    color: #F0E68C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 1rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+#newgamebutton:hover,
+#newgamebutton:focus,
+#newgamebutton:active {
+    background-color: #F0E68C;
+    color: #1B2631;
+    outline: none;
+
+}
+
+.highlight {
+    color: yellow;
+    text-shadow: 0 0 5px #fff;
+    animation: glitter 1s linear infinite;
+}
+
+@keyframes glitter {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
