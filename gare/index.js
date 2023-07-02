@@ -28,3 +28,7 @@ function addValueToArray(arr, value) {
   arr.push(value);
   return arr;
 }
+
+//ChatGPT Prompt :
+//I got an array of maximum 3 integers. I can add integers to the array. If the array is full, then we drop the first value and add the new value at the end.
+//Give me a function javascript function that takes in input the array and the new value.
